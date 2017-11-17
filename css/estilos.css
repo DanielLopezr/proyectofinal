@@ -1,0 +1,30 @@
+body{
+ font-family: 'Dancing Script', cursive;
+ color: white;
+ background-color: black;
+}
+
+header{
+  background-color:  #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  position: fixed; top:0;
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li{
+  overflow: hidden;
+  display: inline;
+  padding: 10px
+}
+
+nav a[href^=index]{
+  text-decoration: none;
+  color: white;
+}
+
+nav a:visited{
+  color: white
+}
