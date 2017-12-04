@@ -1,23 +1,46 @@
 body{
  font-family: 'Dancing Script', cursive;
- color: white;
  background-color: black;
+ margin: 0;
+ color: black;
+ font-size: 1rem
 }
 
 header{
   background-color:  #5b7989;
   border-radius: 10px 10px 0px 0px;
-  position: fixed; top:0;
-  width: 100%;
   display:flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
+  color: white
 }
+
+footer{
+  border-radius: 0 0 10px 10px;
+  background-color: #C6d5c5;
+  margin: 0 auto;
+}
+
+footer h3{
+  margin: 0 auto;
+}
+
+#foot3 div{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+
+#foot3 div a{
+  width: 20%
+}
+
 
 ul li{
   overflow: hidden;
   display: inline;
-  padding: 10px
+  padding: 10px;
 }
 
 nav a[href^=index]{
@@ -27,4 +50,71 @@ nav a[href^=index]{
 
 nav a:visited{
   color: white
+}
+
+@media (max-width:900px) {
+  body{
+    justify-content: center;
+  }
+
+  #contenedor{
+    width: 100%;
+    background-color: #FDFA8B;
+    margin:0 auto;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  img{
+    margin: 5%
+  }
+}
+
+@media (min-width:900px) {
+
+  #contenedor{
+    width: 900px;
+    background-color: #FDFA8B;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0
+  }
+
+  header{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0
+  }
+
+  footer{
+    width: 900px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  footer div{
+    width: 20%;
+    margin: 1%
+  }
+
+  #contenedor{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #imagenprincipal{
+    width: 100%;
+  }
+
+  #imagensecundaria1{
+    width: 40%
+  }
+
+  #imagensecundaria2{
+    width: 40%
+  }
 }
