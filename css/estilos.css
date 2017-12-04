@@ -11,6 +11,18 @@ color: white;
 background-color: #5b7989;
 justify-content: space-around;
 align-items: center;
+text-shadow: 2px #02010a;
+border-radius: 10px 10px 0 0;
+}
+
+#img1{
+  width: 100%;
+  background-color: #82c3a6;
+}
+
+#img2{
+  width: 100%;
+  background-color: #d5c75f;
 }
 
 footer{
@@ -114,13 +126,15 @@ nav a:visited{
     margin: 1%
   }
 
-  #contenedor{
+  #img2{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
   }
 
   #imagenprincipal{
-    width: 100%;
+    width: 90%;
+    padding: 5%;
+    margin: 0 auto !important;
   }
 
   #imagensecundaria1{

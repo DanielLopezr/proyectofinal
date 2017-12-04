@@ -11,6 +11,8 @@ color: white;
 background-color: #5b7989;
 justify-content: space-around;
 align-items: center;
+text-shadow: 2px #02010a;
+border-radius: 10px 10px 0 0;
 }
 
 footer{
