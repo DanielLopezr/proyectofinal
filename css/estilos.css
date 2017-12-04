@@ -3,17 +3,14 @@ body{
  background-color: black;
  margin: 0;
  color: black;
- font-size: 1rem
+ font-size: 2.5vmin
 }
 
 header{
-  background-color:  #5b7989;
-  border-radius: 10px 10px 0px 0px;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  color: white
+color: white;
+background-color: #5b7989;
+justify-content: space-around;
+align-items: center;
 }
 
 footer{
@@ -55,20 +52,35 @@ nav a:visited{
 @media (max-width:900px) {
   body{
     justify-content: center;
+    font-size: 2rem
   }
 
+  header{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+  }
   #contenedor{
     width: 100%;
     background-color: #FDFA8B;
     margin:0 auto;
   }
 
-  header{
+  footer{
     width: 100%;
   }
 
-  img{
-    margin: 5%
+  #foot1,#foot2,#foot3,#foot4{
+    padding: 5%;
+  }
+
+  #contenedor figure{
+    margin: 0 auto !important;
+  }
+
+  #contenedor figure img{
+    width: 80%;
+    margin: 5% 10%;
   }
 }
 
@@ -86,7 +98,8 @@ nav a:visited{
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0
+    margin-bottom: 0;
+    display: flex;
   }
 
   footer{
