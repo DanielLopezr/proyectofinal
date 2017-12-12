@@ -13,6 +13,7 @@ justify-content: space-around;
 align-items: center;
 text-shadow: 2px #02010a;
 border-radius: 10px 10px 0 0;
+animation: slide-in 1s
 }
 
 #img1{
@@ -45,7 +46,6 @@ footer h3{
   width: 20%
 }
 
-
 ul li{
   overflow: hidden;
   display: inline;
@@ -60,11 +60,49 @@ nav a[href^=index]{
 nav a:visited{
   color: white
 }
+#imagensecundaria1{
+  transition: transform 1s;
+}
+
+#imagensecundaria1:hover{
+  transform: rotate(10deg);
+}
+
+#imagensecundaria1{
+  box-shadow: 2px;
+}
+
+#imagensecundaria2{
+  transition: transform 1s;
+}
+
+#imagensecundaria2:hover{
+  transform: translate(20px, -5px);
+}
+
+#imagensecundaria2{
+  box-shadow: 2px;
+}
+
+figcaption{
+  text-align: center;
+  color: black;
+}
+
+figcaption :visited{
+  color: black;
+}
+
+@keyframes slide-in {
+0%{margin-top: 150%}
+60%{margin-top: -5%}
+100%{margin-top: 0%}
+}
 
 @media (max-width:900px) {
   body{
     justify-content: center;
-    font-size: 2rem
+    font-size: 1.5rem
   }
 
   header{
@@ -138,7 +176,7 @@ nav a:visited{
   }
 
   #imagensecundaria1{
-    width: 40%
+    width: 40%;
   }
 
   #imagensecundaria2{
